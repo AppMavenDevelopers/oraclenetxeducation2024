@@ -1,0 +1,166 @@
+.paragraph {
+  line-height: 1.6;
+  text-align: justify;
+  font-family: var(--font-famely-krona);
+}
+
+.list__item {
+  text-align: start;
+  font-family: var(--font-famely-montserrat);
+}
+
+.paragraph,
+.list__item {
+  padding: 1rem 0;
+  color: var(--color-text);
+  font-weight: 400;
+}
+
+/* Titles */
+
+.title {
+  padding: 1.5rem 0; /* Añade margen interno arriba y abajo */
+  font-weight: 800;
+}
+
+.subtitle {
+  padding-bottom: 1rem;
+  font-weight: 700;
+}
+
+.title,
+.subtitle {
+  color: var(--color-text);
+  font-family: var(--font-famely-montserrat);
+}
+
+/* Button */
+
+.button {
+  font-size: var(--font-size-link);
+  font-family: var(--font-famely-krona);
+  padding: 1.2rem 2.4rem;
+  border: none;
+  border-radius: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 0.4rem 0.6rem rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.2s ease,
+    box-shadow 0.3s ease; /* Suaviza las transiciones */
+}
+
+.button:hover {
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+.button:focus {
+  outline: none; /* Elimina el borde por defecto del navegador */
+  box-shadow: 0 0 0 3px var(--color-secondary); /* Añade un borde de enfoque */
+  transform: translateY(-2px); /* Mantiene el botón elevado al enfocar */
+}
+
+/* perfect square */
+.square {
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+
+.square .square__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+/* Efect of Hover */
+.square .square__img:hover {
+  transform: scale(1.1); /* Ampliar ligeramente la imagen */
+  filter: brightness(0.8) sepia(0.2) saturate(1.5) hue-rotate(10deg); /* Ajustes de color */
+  border: 3px solid var(--color-primary); /* Borde con color primario */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Sombra suave */
+}
+
+/* styles for textarea */
+
+.textarea {
+  font-family: var(--font-famely-krona);
+  width: 100%;
+  padding: 1.5rem;
+  border: 0.2rem solid var(--color-text);
+  border-radius: 0.8rem;
+  resize: none;
+  box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: justify;
+  font-family: var(--font-famely-krona);
+  font-weight: 700;
+}
+
+.textarea:focus {
+  outline: none;
+  border-color: var(--color-primary); /* Cambio a color de texto en foco */
+  box-shadow: 0 0 10px var(--color-secondary);
+}
+
+/*Style Alerts */
+
+/* Estilo para el overlay */
+
+.alert-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000; /* Asegúrate de que esté por encima de otros elementos */
+}
+
+.alert {
+  background: var(--color-primary); /* Fondo blanco para el cuadro de alerta */
+  padding: 1rem;
+  border-radius: 8px;
+  position: relative;
+  max-width: 500px;
+  width: 90%;
+}
+
+.alert__message {
+  font-weight: 700;
+  padding: 2rem 3rem;
+  color: var(--color-text);
+  margin: 0;
+  font-size: var(--font-size-link);
+}
+
+.alert__close-button {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background: #ff6f6f; /* Color del botón de cerrar */
+  border: none;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra del botón */
+}
+
+.alert__close-button:hover {
+  background: #ff4c4c; /* Color del botón al pasar el ratón */
+}

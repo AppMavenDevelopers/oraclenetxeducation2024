@@ -1,0 +1,389 @@
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@100;200;300;400;600;700;800;900&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: var(--color-background);
+}
+
+a,
+button {
+  display: inline-block;
+  text-decoration: none;
+  outline: none;
+}
+
+li {
+  list-style: none;
+}
+
+:root {
+  --color-background: #021526; /* Color de fondo principal */
+  --color-primary: #03346e; /* Color principal para botones y enlaces */
+  --color-secondary: #6eacda; /* Color secundario para encabezados y hover */
+  --color-text: #e2e2b6; /* Color del texto principal */
+  --font-size-link: 2.2rem;
+  --font-size-title: 3rem;
+  --font-size-paragraph: 2rem;
+  --font-famely-krona: "Krona", sans-serif;
+  --font-famely-montserrat: "Montserrat", sans-serif;
+}
+
+/* Star Header */
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 1.5rem;
+  z-index: 3;
+  background-color: var(--color-background);
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .container .header__img {
+  height: 5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Añade una sombra sutil para profundidad */
+  transition: transform 0.3s, box-shadow 0.3s; /* Transiciones suaves para hover */
+}
+
+.header .container .header__img:hover {
+  transform: scale(
+    1.1
+  ); /* Aumenta ligeramente el tamaño del logotipo al pasar el ratón */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Aumenta la sombra para un efecto de profundidad adicional */
+}
+
+.header .container .header__nav {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.header .container .header__nav .header__list {
+  margin: 0 1.5rem;
+}
+
+.header .container .header__nav .header__list .header__list__link {
+  color: var(--color-text);
+  padding: 0 2rem;
+  font-size: var(--font-size-link);
+  font-weight: 600;
+  font-family: var(--font-famely-montserrat);
+  position: relative;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.header .container .header__nav .header__list .header__list__link::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background-color: var(--color-secondary);
+  transition: width 0.3s;
+}
+
+.header .container .header__nav .header__list .header__list__link:hover::before,
+.header
+  .container
+  .header__nav
+  .header__list
+  .header__list__link:focus::before {
+  width: 100%;
+}
+
+.header .container .header__nav .header__list .header__list__link:hover,
+.header .container .header__nav .header__list .header__list__link:focus {
+  color: var(--color-primary);
+  transform: translateY(-2px); /* Sutil efecto de elevación */
+}
+
+.header .container .header__hamb {
+  display: none;
+}
+
+/* End Headere */
+
+/* Start Home */
+
+.home {
+  position: relative;
+}
+
+.home::before {
+  content: "";
+  background-color: rgba(21, 21, 21, 0.6);
+  top: 0;
+  left: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+.home .home__img {
+  width: 100%;
+  display: block;
+}
+
+.home .home__block {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2rem;
+  width: 80rem;
+  z-index: 2;
+}
+
+.home .home__block .home__block__title {
+  text-align: center; /* Centra el texto */
+}
+
+/* Estilos para el span dentro del h1 */
+.home .home__block .home__block__title__program {
+  color: var(--color-secondary); /* Aplica el color secundario para destacar */
+  /* Mantiene el mismo tamaño que el h1 */
+}
+
+.home .home__block .home__block__title,
+.home .home__block .home__block__title__program {
+  font-size: var(--font-size-title);
+}
+
+.home .home__block .home__block__description {
+  font-size: var(--font-size-paragraph);
+}
+
+.home .home__block .home__block__button {
+  background-color: var(--color-primary);
+  color: var(--color-text);
+}
+
+.home .home__block .home__block__button:hover {
+  background-color: var(--color-secondary);
+  color: var(--color-background);
+}
+
+/* Start Information */
+
+.information .container .information__block .information__block__subtitle {
+  font-size: var(--font-size-title);
+}
+
+.information .container .information__block .information__block__description {
+  font-size: var(--font-size-paragraph);
+}
+
+.information .container .information__block .information__block__img {
+  height: 35rem;
+}
+
+/* Start Instructions */
+
+.instructions .container .instructions__title {
+  text-align: center;
+}
+
+.instructions .container .instructions__block .square {
+  padding-bottom: 56.25%;
+}
+
+.instructions .container .instructions__block .instructions__img .square__img {
+  width: 100%;
+}
+
+.instructions .container .instructions__block .instructions__content {
+  padding: 2rem;
+}
+
+.instructions
+  .container
+  .instructions__block
+  .instructions__content
+  .instructions__list {
+  padding: 0;
+}
+
+.instructions
+  .container
+  .instructions__block
+  .instructions__content
+  .instructions__list
+  .instructions__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.instructions
+  .container
+  .instructions__block
+  .instructions__content
+  .instructions__list
+  .instructions__item::before {
+  color: var(--color-secondary);
+  font-weight: bold;
+  margin-right: 1rem;
+}
+
+.instructions
+  .container
+  .instructions__block
+  .instructions__content
+  .instructions__list
+  .instructions__item
+  i {
+  color: var(--color-primary);
+  margin-right: 1rem;
+}
+
+.instructions
+  .container
+  .instructions__block
+  .instructions__content
+  .instructions__list
+  .instructions__item
+  .instructions__item__text {
+  font-size: var(--font-size-paragraph);
+}
+
+.instructions
+  .container
+  .instructions__block
+  .instructions__content
+  .instructions__list
+  .instructions__item
+  i
+  strong {
+  margin-left: 0.5rem;
+}
+
+/* Start Challange */
+
+.challange {
+  border-radius: 12px;
+  /* Box-shadow arriba y abajo */
+
+  padding-bottom: 6rem;
+}
+
+.challange .container .challange__title {
+  text-align: center;
+}
+
+.challange .container .challange__block .challange__input,
+.challange .container .challange__block .challange__output {
+  background-color: rgb(2, 21, 38, 0.1);
+  color: var(--color-text);
+  font-size: var(--font-size-paragraph);
+  height: 30rem;
+  width: 100%;
+}
+
+.challange .container .challange__buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  height: 100%;
+}
+
+.challange .container .challange__buttons .challange__encrypt,
+.challange .container .challange__buttons .challange__decrypt,
+.challange .container .challange__buttons .challange__copy,
+.challange .container .challange__buttons .challange__reboot {
+  width: 100%;
+  color: var(--color-text);
+}
+
+.challange .container .challange__buttons .challange__encrypt,
+.challange .container .challange__buttons .challange__decrypt,
+.challange .container .challange__buttons .challange__copy,
+.challange .container .challange__buttons .challange__reboot {
+  background-color: var(--color-primary);
+}
+
+.challange .container .challange__buttons .challange__encrypt:hover,
+.challange .container .challange__buttons .challange__decrypt:hover,
+.challange .container .challange__buttons .challange__copy:hover,
+.challange .container .challange__buttons .challange__reboot:hover {
+  background-color: var(--color-secondary);
+  color: var(--color-background);
+}
+
+/* Start Footer */
+
+.footer .container {
+  padding: 1.5rem 0;
+}
+
+.footer .container .footer__subtitle {
+  text-align: center;
+  font-size: var(--font-size-link);
+}
+
+.footer .container .footer__list {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.footer .container .footer__list .footer__link {
+  color: var(--color-text);
+  font-size: 4rem;
+  transition: color 0.3s, transform 0.3s, background-color 0.3s; /* Añadimos transición para el hover */
+  padding: 0.5rem; /* Espacio alrededor del icono */
+  border-radius: 50%; /* Hacemos el fondo circular */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer .container .footer__list .footer__link:hover,
+.footer .container .footer__list .footer__link:focus {
+  color: var(--color-background); /* Color del texto en hover */
+  background-color: var(
+    --color-secondary
+  ); /* Fondo de color secundario en hover */
+  transform: scale(1.1); /* Escala para un efecto de aumento */
+}
+
+/* Agregar un borde sutil en el hover */
+.footer .container .footer__list .footer__link {
+  border: 2px solid transparent;
+}
+
+.footer .container .footer__list .footer__link:hover {
+  border: 2px solid var(--color-primary); /* Borde del color primario en hover */
+}
+
+.footer .footer__bar {
+  background-color: #000000;
+  padding: 0.5rem;
+  margin-bottom: -6rem;
+}
+
+.footer .footer__bar .footer__bar__pag {
+  text-align: center;
+  font-size: var(--font-size-paragraph);
+}

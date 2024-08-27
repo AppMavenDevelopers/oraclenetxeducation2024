@@ -1,0 +1,53 @@
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.container,
+.container__fluid {
+  padding: 0 1.5rem;
+}
+
+.container__fluid {
+  width: 100%;
+}
+
+.section {
+  padding-top: 7rem;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -1.5rem;
+}
+
+.column__title {
+  width: 100%;
+}
+
+.column {
+  padding: 0 1.5rem;
+}
+
+.column__20 {
+  width: 20%;
+}
+
+.column__40 {
+  width: 40%;
+}
+
+.column__50 {
+  width: 50%;
+}
+
+.column__33 {
+  width: 33.33%;
+}
+
+.img__center {
+  padding-top: 5rem;
+  display: flex;
+  justify-content: center;
+}
