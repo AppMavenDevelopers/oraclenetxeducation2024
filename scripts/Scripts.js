@@ -111,6 +111,13 @@ const copyText = () => {
   showAlert("Text copied successfully.");
 };
 
+// Function Clear text
+
+const clearText = () => {
+  getElement("challange__input").value = "";
+  getElement("challange__output").value = "";
+};
+
 // Function to clear both textareas
 const clearTextAreas = () => {
   const input = getElement("challange__input").value;
@@ -119,21 +126,21 @@ const clearTextAreas = () => {
   if (input === "" && output === "") {
     showAlert("Both fields are already empty.");
   } else {
-    getElement("challange__input").value = "";
-    getElement("challange__output").value = "";
+    clearText();
     showAlert("Both fields have been cleared.");
   }
 };
 
 // Function to validate the input
 const validateInput = (input) => {
-  const regex = /^[a-z\s]+$/;
+  const regex = /^[a-z0-9\s]+$/;
   if (input === "") {
     showAlert("The field cannot be empty.");
     return false;
   }
   if (!regex.test(input)) {
-    showAlert("Only lowercase letters are allowed.");
+    clearText();
+    showAlert("Only lowercase letters and without accents");
     return false;
   }
   return true;

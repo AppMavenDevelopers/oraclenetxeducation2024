@@ -250,7 +250,7 @@ li {
   .instructions__list
   .instructions__item
   i {
-  color: var(--color-primary);
+  color: var(--color-secondary);
   margin-right: 1rem;
 }
 
@@ -262,6 +262,7 @@ li {
   .instructions__item
   .instructions__item__text {
   font-size: var(--font-size-paragraph);
+  font-weight: 600;
 }
 
 .instructions

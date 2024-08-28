@@ -137,7 +137,8 @@
 
 .alert__message {
   font-weight: 700;
-  padding: 2rem 3rem;
+  margin: 2rem;
+  padding: 2rem;
   color: var(--color-text);
   margin: 0;
   font-size: var(--font-size-link);
