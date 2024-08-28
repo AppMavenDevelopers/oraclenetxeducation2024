@@ -19,7 +19,7 @@ This project is a text encryptor developed as part of the Oracle Next Education 
 1. **Clone the Repository:** Download the project to your local machine using the following command:
    ```bash
    git clone https://github.com/levanipuc202424/encriptador-de-texto.git
-2. **Open the Project:** Browse the following link to see the deployed project https://challangeoraclenexteducation-levanipucs-projects.vercel.app/
+2. **Open the Project:** Browse the following link to see the deployed project <a href="https://challangeoraclenexteducation-levanipucs-projects.vercel.app/">aqui</a>
 3. **Enter Text:** In the encryptor interface, "challange" option, click and enter the text you want to encrypt or decrypt.
 4. **See the Result:** The encrypted or decrypted text will automatically appear on the screen.
 
