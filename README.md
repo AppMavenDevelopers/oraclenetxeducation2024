@@ -47,4 +47,4 @@ You can try the following features in our tool:
 </ul>
 
 ## Authors
-<ul> <li><strong>Armel Erazo</strong> - Main project developer. </li> </ul> ```
+<ul> <li><strong>AppMaven Developers</strong> - Main project developer. </li> </ul> ```
