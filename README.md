@@ -2,7 +2,6 @@
 
 ## Project Description
 
-
 This project is a text encryptor developed as part of the Oracle Next Education program challenge, group 7. The tool allows you to encrypt and decrypt text strings using a specific set of substitution rules. Its goal is to help protect simple messages using a basic encryption process.
 
 ## Project Status
@@ -12,6 +11,7 @@ Currently, the project is complete and in the maintenance phase. All main functi
 ## Demo of Functions and Applications
 
 You can try the following features in our tool:
+
 <ul>
   <li><stron>Encryption:</stron> Enter a message in the text field and click "Encrypt" to encrypt it.</li>
   <li><stron>Decryption:</stron> Encrypt a message and click "Decrypt" to revert it to its original form.</li>
@@ -33,6 +33,7 @@ You can try the following features in our tool:
 1. **Clone the Repository:** Download the project to your local machine using the following command:
    ```bash
    git clone https://github.com/levanipuc202424/encriptador-de-texto.git
+   ```
 2. **Open the Project:** Browse the following link to see the deployed project <a href="https://challangeoraclenexteducation-levanipucs-projects.vercel.app/">here</a>
 3. **Enter Text:** In the encryptor interface, "challange" option, click and enter the text you want to encrypt or decrypt.
 4. **See the Result:** The encrypted or decrypted text will automatically appear on the screen.
@@ -47,4 +48,5 @@ You can try the following features in our tool:
 </ul>
 
 ## Authors
-<ul> <li><strong>AppMaven Developers</strong> - Main project developer. </li> </ul> ```
+
+<ul> <li><strong>Armel Erazo</strong> - Main project developer. </li> </ul> ```
