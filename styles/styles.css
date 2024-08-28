@@ -110,7 +110,7 @@ li {
 
 .header .container .header__nav .header__list .header__list__link:hover,
 .header .container .header__nav .header__list .header__list__link:focus {
-  color: var(--color-primary);
+  color: var(--color-secondary);
   transform: translateY(-2px); /* Sutil efecto de elevación */
 }
 
