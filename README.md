@@ -28,7 +28,7 @@ You can try the following features in our tool:
   <li><strong>Simple Web Interface:</strong> Users can interact with the tool through an intuitive web interface, suitable for any level of experience.</li>
 </ul>
 
-## Cómo Usarlo
+## how to use it
 
 1. **Clone the Repository:** Download the project to your local machine using the following command:
    ```bash
@@ -49,4 +49,4 @@ You can try the following features in our tool:
 
 ## Authors
 
-<ul> <li><strong>Armel Erazo</strong> - Main project developer. </li> </ul> ```
+<ul> <li><strong>AppMaven Developers</strong> - Main project developer. </li> </ul> ```
